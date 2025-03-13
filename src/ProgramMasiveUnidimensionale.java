@@ -7,17 +7,22 @@
  * - lucrul cu masive unidimensionale
  */
 
+import java.util.Scanner;
+
 public class ProgramMasiveUnidimensionale {
     public static void main(String[] args){
         // declararea unui vector
         int[] vector = new int[4];
-        // atribuire valori
-        vector[0] = 10;
-        vector[1] = 11;
-        vector[2] = 12;
+
+        // citire parametri din linia de comandă
+        Scanner scannerulMeu = new Scanner(System.in);
+        for(int i = 0; i<4; i++){
+             System.out.printf("Elementul %d: ", i);
+             vector[i] = scannerulMeu.nextInt();
+        }
 
         //afisare elemente vector
-        for(int i = 0; i < 3; i++ ){
+        for(int i = 0; i < 4; i++ ){
             System.out.print(vector[i] + " ");
         }
     }
