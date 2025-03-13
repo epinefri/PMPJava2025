@@ -9,7 +9,7 @@
 
 //import java.util.Scanner;
 
-public class ProgramMasiveUnidimensionale {
+public class ProgramMasiveUnidimensionale { 
     public static void main(String[] args){
         // declararea unui vector
         String[] vector = new String[args.length];
