@@ -12,10 +12,13 @@
 public class ProgramMasiveUnidimensionale {
     public static void main(String[] args){
         // citire parametri din linia de comandă / un singur arg
-        String[] valoriString = args[0].split(",");
-        for(int i = 0; i<valoriString.length; i++){
-            System.out.printf("Elementul %d: ", i);
-            System.out.print(valoriString[i] + " ");
+        String[] valoriString = args[0].split(",");// split aloca si spatiul necesar
+
+        // convertire valori din vectorul de strings -> vector int
+        Integer[] valori = new Integer[valoriString.length];
+        for (int i = 0; i < valoriString.length; i++){
+            valori[i] = Integer.parseInt(valoriString[i].trim());
+            System.out.println(valori[i]);
         }
 
 
