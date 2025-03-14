@@ -16,6 +16,11 @@ public class ProgramMasiveUnidimensionale {
             System.out.print(vector[i] + " ");
         System.out.println();
     }
+    // metoda pt incrementare elem vector
+    static void incrementare(int[] vector){
+        for(int i =0; i< vector.length; i++)
+            vector[i]=vector[i]+1;
+    }
 
     public static void main(String[] args){
         // citire parametri din linia de comandă / un singur arg
@@ -29,7 +34,8 @@ public class ProgramMasiveUnidimensionale {
         }
 
         afisare("elemente", valori);
-
+        incrementare(valori);
+        afisare("dupa incrementare", valori);
 
     }
 }
