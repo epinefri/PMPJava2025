@@ -9,16 +9,13 @@
 
 //import java.util.Scanner;
 
-public class ProgramMasiveUnidimensionale { 
+public class ProgramMasiveUnidimensionale {
     public static void main(String[] args){
-        // declararea unui vector
-        String[] vector = new String[args.length];
-
-        // citire parametri din linia de comandă
-        for(int i = 0; i<args.length; i++){
-             System.out.printf("Elementul %d: ", i);
-             vector[i] = args[i];
-            System.out.print(vector[i] + " ");
+        // citire parametri din linia de comandă / un singur arg
+        String[] valoriString = args[0].split(",");
+        for(int i = 0; i<valoriString.length; i++){
+            System.out.printf("Elementul %d: ", i);
+            System.out.print(valoriString[i] + " ");
         }
 
 
